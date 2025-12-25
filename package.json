@@ -2,6 +2,7 @@
   "name": "@zos-apps/assistant",
   "version": "4.2.0",
   "description": "AI-powered chat assistant",
+  "homepage": "https://zos-apps.github.io/assistant",
   "main": "src/index.tsx",
   "types": "src/index.tsx",
   "files": ["src"],
@@ -11,18 +12,35 @@
     "icon": "🤖",
     "category": "productivity",
     "permissions": ["network"],
-    "installable": true
+    "installable": true,
+    "shortcut": "Cmd+A",
+    "menu": {
+      "help": {
+        "documentation": "https://zos-apps.github.io/assistant",
+        "reportIssue": "https://github.com/zos-apps/assistant/issues"
+      }
+    },
+    "contextMenu": [
+      {"label": "Open", "action": "open"},
+      {"label": "Open in New Window", "action": "openNew"},
+      {"type": "separator"},
+      {"label": "Get Info", "action": "getInfo"},
+      {"label": "Show in Finder", "action": "showInFinder"}
+    ]
   },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "lucide-react": ">=0.300.0"
   },
-  "keywords": ["zos", "app", "assistant"],
+  "keywords": ["zos", "app", "assistant", "macos", "desktop"],
   "author": "Hanzo AI",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zos-apps/assistant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/assistant/issues"
   }
 }

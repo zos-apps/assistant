@@ -1,8 +1,12 @@
 # 🤖 AI Assistant
 
+[![Version](https://img.shields.io/badge/version-4.2.0-blue.svg)](https://github.com/zos-apps/assistant/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-online-purple.svg)](https://zos-apps.github.io/assistant)
+
 > AI-powered chat assistant
 
-Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
+**[Documentation](https://zos-apps.github.io/assistant)** • **[App Store](https://zos-apps.github.io/app-store)** • **[All Apps](https://github.com/zos-apps)**
 
 ## Installation
 
@@ -10,37 +14,55 @@ Part of the [zOS Apps](https://github.com/zos-apps) ecosystem.
 npm install github:zos-apps/assistant
 ```
 
+Or install via the [zOS App Store](https://zos-apps.github.io/app-store).
+
 ## Usage
 
 ```tsx
-import App from '@zos-apps/assistant';
+import AI Assistant from '@zos-apps/assistant';
 
-function MyApp() {
-  return <App />;
+function App() {
+  return <AI Assistant />;
 }
 ```
 
-## Package Spec
+## Features
 
-App metadata is defined in `package.json` under the `zos` field:
+- Native zOS window integration
+- Dark mode support
+- Keyboard shortcuts (`Cmd+A`)
+- Context menu actions
+- Menu bar integration
 
-```json
-{
-  "zos": {
-    "id": "ai.hanzo.assistant",
-    "name": "AI Assistant",
-    "icon": "🤖",
-    "category": "productivity",
-    "permissions": ["network"],
-    "installable": true
-  }
-}
-```
+## Keyboard Shortcuts
 
-## Version
+| Shortcut | Action |
+|----------|--------|
+| `Cmd+A` | Open AI Assistant |
 
-v4.2.0
+## Context Menu
+
+Right-click the app icon for:
+- **Open** - Launch the app
+- **Open in New Window** - Open a new instance
+- **Get Info** - View app details
+- **Show in Finder** - Locate app files
+
+## Menu Bar
+
+When active, adds menus: AI Assistant, File, Edit, View, Window, Help
+
+## Permissions
+
+- `network`
+
+## Links
+
+- [Documentation](https://zos-apps.github.io/assistant)
+- [GitHub Repository](https://github.com/zos-apps/assistant)
+- [Report Issues](https://github.com/zos-apps/assistant/issues)
+- [All zOS Apps](https://github.com/zos-apps)
 
 ## License
 
-MIT © Hanzo AI
+MIT © [Hanzo AI](https://hanzo.ai)
